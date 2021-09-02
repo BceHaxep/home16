@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "TT Norms";
+  src: url("./assets/fonts/TTNorms-Light.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "TT Norms", sans-serif !important;
+}
+
+/*# sourceMappingURL=variables.css.map */

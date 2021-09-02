@@ -1,0 +1,84 @@
+@import "header";
+@import "footer";
+@import "variables";
+.top__text{
+  display: block;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  @include margin;
+  max-width: 864px;
+  & h1{
+    text-align: left;
+    font-weight: bold;
+    @include grad-text;
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+.team__container{
+  display: grid;
+  max-width: 1318px;
+  @include margin;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(91px, 412px));
+  grid-gap: 40px;
+}
+.team__item{
+  max-width: 413px;
+  border-radius: 12px;
+  & img{
+    margin-bottom: 20px;
+  }
+}
+.inner__text{
+  display: inline-block;
+  & h6{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 5px;
+    color: #323264;
+    &:hover{
+      @include grad-text;
+      transition: 0.3s ease;
+    }
+  }
+  & p{
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 137% */
+
+
+    /* Grey / Text */
+
+    color: #B3B3BA;
+  }
+}
+.arrow{
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+}
+
+.tret {
+  color: #F0145A !important;
+  text-decoration: underline !important;
+  text-decoration-color: #F0145A !important;
+}
+header{
+  background: white !important;
+}
+header .header {
+  padding: 0 20px;
+  max-width: 1790px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.insadik2{
+  padding: 0 20px;
+}
+.adaptive__header{
+  display: none;
+}

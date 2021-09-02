@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "TT Norms";
+  src: url("./assets/fonts/TTNorms-Light.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "TT Norms", sans-serif !important;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  padding-bottom: 40px;
+  background: #F5F5FA;
+  padding-top: 32px;
+}
+
+.insadik {
+  display: block;
+  max-width: 1520px;
+  border-top: 4px solid #E6E6F0;
+  padding-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info {
+  padding-bottom: 10px;
+}
+
+.street {
+  display: inline-block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #323264;
+  margin-right: 35px;
+}
+
+.map {
+  display: inline-block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+.map:hover {
+  background: #F0145A;
+  transition: 0.3s ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.map::before {
+  content: "\a";
+  border-radius: 50%;
+  color: #B3B3BA;
+  background-color: #B3B3BA;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 14px;
+}
+
+.bottom_info {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer__phone {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: right;
+  /* Main / Alt */
+  color: #46466E;
+}
+.footer__phone::before {
+  content: "\a";
+  border-radius: 50%;
+  color: #B3B3BA;
+  background-color: #B3B3BA;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+  margin-left: 10px;
+}
+
+.footer__gmail {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #24A3FF;
+}
+.footer__gmail:hover {
+  color: #F0145A;
+}
+.footer__gmail::before {
+  content: "\a";
+  border-radius: 50%;
+  color: #B3B3BA;
+  background-color: #B3B3BA;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 9px;
+  margin-left: 15px;
+}
+
+.year {
+  display: block;
+  float: right;
+  margin-top: -32px;
+}
+
+.path2:hover {
+  fill: #F0145A;
+  transition: 0.3s ease;
+}
+
+.insadik2 {
+  max-width: 1720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=footer.css.map */

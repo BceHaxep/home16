@@ -1,0 +1,55 @@
+@import "adaptive";
+@media all and (max-width: 1480px) {
+  .section_1{
+    height: fit-content;
+  }
+  .begin .what{
+    padding-bottom: 50px;
+  }
+
+}
+
+@media all and (max-width: 990px) {
+  .section_2{
+    max-width: 920px;
+    padding: 0 10px;
+  }
+  .header__main{
+    display: none;
+  }
+  .header__right{
+    display: none;
+  }
+  .adaptive__header{
+    display: block;
+  }
+  .lang__list {
+    display: inline-flex;
+    padding-right: 35px;
+    gap: 5px;
+  }
+  .lang__list li {
+    @include lang;
+    display: inline;
+    width: 34px;
+    height: 29px;
+  }
+  .lang__list a {
+    @include lang;
+    display: inline;
+    width: 30px;
+    height: 29px;
+    text-decoration: none;
+    text-underline: none;
+  }
+  .lang__list li:hover {
+    background-color: $lang-gray;
+    transition: 0.3s ease;
+    border-radius: 8px;
+  }
+  .adapt__logo{
+    display: inline-block;
+    width: 80%;
+    padding-left: 5px;
+  }
+}

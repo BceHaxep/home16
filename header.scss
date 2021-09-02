@@ -1,0 +1,130 @@
+@import "style";
+$gray-separator: #E6E6F0;
+header {
+  position: relative;
+  padding-top: 50px;
+  width: 100%;
+  @include margin;
+  background-color: white;
+  .header{
+    max-width: 1790px;
+    @include margin;
+  }
+  .header__right {
+    float: right;
+    .lang__list {
+      display: inline-flex;
+      padding-right: 35px;
+      gap: 5px;
+    }
+    .lang__list li {
+      @include lang;
+      display: inline;
+      width: 34px;
+      height: 29px;
+    }
+    .lang__list a {
+      @include lang;
+      display: inline;
+      width: 30px;
+      height: 29px;
+      text-decoration: none;
+      text-underline: none;
+    }
+    .lang__list li:hover {
+      background-color: $lang-gray;
+      transition: 0.3s ease;
+      border-radius: 8px;
+    }
+    .header__adress {
+      display: inline-block;
+      font-family: $global-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: right;
+      color: $gray-text;
+      padding-right: 15px;
+    }
+
+    .header__phone {
+      display: inline-block;
+      font-family: $global-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: right;
+      color: $gray-text;
+      padding-right: 17px;
+    }
+
+    .header__phone::before {
+      content: "\A";
+      border-radius: 50%;
+      color: white;
+      background-color: $gray-separator;
+      width: 6px;
+      height: 6px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .header__phone::after {
+      content: "\A";
+      border-radius: 50%;
+      color: white;
+      background-color: $gray-separator;
+      width: 6px;
+      height: 6px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 15px;
+    }
+
+    .header__offers {
+      display: inline-block;
+      @include offers;
+
+
+    }
+  }
+}
+.offers__list {
+  padding-top: 19px;
+  padding-left: 152px;
+  display: inline-flex;
+  width: 131%;
+  max-width: 565px;
+  justify-content: space-between;
+}
+.list__item {
+  display: inline;
+  & a{
+    text-decoration: none;
+    color: #24A3FF;
+  }
+}
+.list__item:hover{
+  background: #F0145A;
+  transition: 0.3s ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header__main{
+  display: inline-flex;
+}
+.path{
+  fill: #B3B3BA;
+  vertical-align: middle;
+}
+.path:hover{
+  fill: #24A3FF;
+  transition: 0.3s ease;
+}
+.header__logo{
+  display: inline-flex;
+  vertical-align: middle;
+}
